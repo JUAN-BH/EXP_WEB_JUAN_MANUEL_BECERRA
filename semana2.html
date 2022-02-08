@@ -16,7 +16,7 @@
         <span>
           <a href="">Inicio</a> <a href="assets/pages/Animes.html">Animes</a>
           <a href="assets/pages/Galeria.html">Galeria</a>
-          <a href="assets/pages/Trailers.html">Trailers</a>
+          <a href="assets/pages/Recomendaciones.html">Recomendaciones</a>
         </span>
       </nav>
     </header>
@@ -71,6 +71,79 @@
           />
         </video>
       </section>
+      <section>
+        <h2>Recomiendame animes por favor</h2>
+        <form action="assets/pages/Animes.html" method="post">
+          <label for="Animename">Nombres del anime</label> <br />
+          <input type="text" id="Animename" /> <br />
+          <!-- <label for="pass">Password:</label> <br />
+          <input type="password" id="pass" /> <br />
+          <label for="phone">Celular</label> <br />
+          <input type="number" name="phone" id="phone" step="10" /> <br /> -->
+          <label for="rage">Que tanto te gusto el anime</label> <br />
+          <input
+            type="range"
+            name="rage"
+            id="rage"
+            min="10"
+            max="50"
+            step="10"
+          />
+          <br />
+          <span style="word-spacing: 10px"> 1 2 3 4 5 </span> <br />
+
+          <label for="genero">Genero del anime</label> <br />
+          <input type="text" list="genero" />
+          <datalist id="genero">
+            <option value="Acción"></option>
+            <option value="Ciencia ficción"></option>
+            <option value="Deportes"></option>
+            <option value="Parodia"></option>
+            <option value="Romance"></option>
+            <option value="Shounen"></option>
+            <option value="Terror"></option>
+            <option value="Aventuras"></option>
+            <option value="Demencia"></option>
+            <option value="Misterio"></option>
+            <option value="Suspenso"></option>
+          </datalist>
+          <br />
+          <label for="comentarios">Comentarios que tengas sobre el anime</label>
+          <br />
+          <textarea
+            name="comentarios"
+            id="comentarios"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <br />
+          <input type="submit" value="enviar" />
+
+          <!--<h2>Escoge tu genero</h2>
+          <label for="gender">Masculino</label>
+          <input type="radio" name="gender" id="gender" />
+          <label for="gender">Femenino</label>
+          <input type="radio" name="gender" id="gender" />
+          <label for="gender">No se</label>
+          <input type="radio" name="gender" id="gender" /> -->
+
+          <!--<h2>Escoge tus animes favoritos</h2>
+          <label for="hobbies">naruto</label>
+          <input type="checkbox" name="hobbies" id="hobbies" /><br />
+          <label for="hobbies">dbz</label>
+          <input type="checkbox" name="hobbies" id="hobbies" /><br />
+          <label for="hobbies"> boku no hero</label>
+          <input type="checkbox" name="hobbies" id="hobbies" /><br /> -->
+
+          <!--<label for="city"> Donde vives?</label>
+          <select name="city" id="city">
+            <option value="cali">Cali</option>
+            <option value="bogota">Bogota</option>
+            <option value="medellin">Medellin</option>
+          </select> 
+          <br /> -->
+        </form>
+      </section>
     </main>
     <footer
       style="
@@ -78,7 +151,7 @@
         height: 100px;
         background-color: red;
         text-align: center;
-        padding: 5px;
+        padding: 15px;
         box-sizing: border-box;
       "
     >
