@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mis animes favoritos</title>
+    <link rel="stylesheet" href="/styles/semana2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Raleway:ital,wght@0,100;0,200;1,100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div>
+          <img src="/assets/img/try1.5.png" alt="portada" class="logo" />
+          <h1>Mis animes favoritos</h1>
+        </div>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="/pages/Animes.html">Animes</a></li>
+          <li><a href="/pages/Galeria.html">Galeria</a></li>
+          <li><a href="/pages/Recomendaciones.html">Recomendaciones</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main style="text-align: center">
+      <section>
+        <p>
+          Me he visto <strong>muchos</strong> animes, sin embargo solo
+          <u>algunos</u> me han impactado de varias maneras <br />
+          por que algunos me los vi desde la <i>infancia</i> y cuando los vuelvo
+          a ver siento mucha nostalgia.
+        </p>
+        <p>si tuviera que crear un top 5 de animes serian estos:</p>
+        <ol style="list-style-position: inside">
+          <li>Dragon Ball</li>
+          <li>Naruto</li>
+          <li>Inuyasha</li>
+          <li>Sakuraso no pet na kanojo</li>
+          <li>Sword art online</li>
+        </ol>
+        <p>
+          Aunque <strong>hoy en dia</strong> han salido animes muy buenos que no
+          podria colocar en un top 5 (osea con un orden) <br />
+          estos son:
+        </p>
+        <ul style="list-style-position: inside">
+          <li>Kimetsu no yaiba</li>
+          <li>Shingeki no kioyin</li>
+          <li>Tokyo ghoul</li>
+          <li>Vinlad saga</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Imagenes</h2>
+        <img
+          src="https://i.blogs.es/04ac6a/2560_3000/1366_2000.jpeg"
+          alt="GOKU"
+          width="20%"
+          height="10%"
+        />
+        <img
+          src="assets/img/kimetsu-no-yaiba-.jpg"
+          alt="kimetsu"
+          width="20%"
+          height="20%"
+        />
+      </section>
+
+      <section>
+        <h2>Trailers de anime</h2>
+        <video width="420" height="340" autoplay muted controls>
+          <source
+            src="assets/vid/y2meta.com - Vinland Saga Temporada 2 _ Teaser Tráiler Oficial (Sub. Español).mp4"
+            type="video/mp4"
+          />
+        </video>
+      </section>
+
+      <section>
+        <h2>Recomiendame animes por favor</h2>
+        <form action="assets/pages/Animes.html" method="post">
+          <label for="Animename">Nombres del anime</label> <br />
+          <input type="text" id="Animename" /> <br />
+          <label for="rage">Que tanto te gusto el anime</label> <br />
+          <input
+            type="range"
+            name="rage"
+            id="rage"
+            min="10"
+            max="50"
+            step="10"
+          />
+          <br />
+          <span style="word-spacing: 10px"> 1 2 3 4 5 </span> <br />
+
+          <label for="genero">Genero del anime</label> <br />
+          <input type="text" list="genero" />
+          <datalist id="genero">
+            <option value="Acción"></option>
+            <option value="Ciencia ficción"></option>
+            <option value="Deportes"></option>
+            <option value="Parodia"></option>
+            <option value="Romance"></option>
+            <option value="Shounen"></option>
+            <option value="Terror"></option>
+            <option value="Aventuras"></option>
+            <option value="Demencia"></option>
+            <option value="Misterio"></option>
+            <option value="Suspenso"></option>
+          </datalist>
+          <br />
+          <label for="comentarios">Comentarios que tengas sobre el anime</label>
+          <br />
+          <textarea
+            name="comentarios"
+            id="comentarios"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <br />
+          <input type="submit" value="enviar" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <h2 style="color: white">juanmita_bh@hotmail.com</h2>
+    </footer>
+  </body>
+</html>
