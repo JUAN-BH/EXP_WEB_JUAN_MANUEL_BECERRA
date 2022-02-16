@@ -41,3 +41,47 @@ body {
   color: red;
   padding: 4px;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+.review-container {
+  display: flex;
+  width: 45%;
+  height: auto;
+  border: 1px solid red;
+  border-radius: 6px;
+  padding: 12px 0 12px 12px;
+  margin: 30px auto 30px auto;
+}
+
+.review-container-portada {
+  width: 316px;
+  height: 382px;
+  object-fit: contain;
+}
+
+ul {
+  list-style: none;
+}
+.review {
+  padding: 24px;
+}
+
+.tittle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 36px;
+}
+.review-content {
+  padding: 0;
+}
+.review-content p {
+  margin-bottom: 46px;
+}
+.sub-tittle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
