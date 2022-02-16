@@ -19,7 +19,7 @@
           <h1>Mis animes favoritos</h1>
         </div>
         <ul>
-          <li><a href="#">Inicio</a></li>
+          <li><a href="/pages/semana2.html">Inicio</a></li>
           <li><a href="/pages/Animes.html">Animes</a></li>
           <li><a href="/pages/Galeria.html">Galeria</a></li>
           <li><a href="/pages/Recomendaciones.html">Recomendaciones</a></li>
@@ -27,28 +27,54 @@
       </nav>
     </header>
     <main>
-      <p>Kimetsu no yaiba</p>
-      <figure>
-        <img
-          src="https://c4.wallpaperflare.com/wallpaper/295/163/719/anime-anime-boys-picture-in-picture-kimetsu-no-yaiba-kamado-tanjir%C5%8D-hd-wallpaper-preview.jpg"
-          alt=""
-        />
-        <figcaption>wallpaper de kimetsu</figcaption>
-        <!-- Para colocar un pie de imagen -->
-      </figure>
+      <div id="gallery-container">
+        <div class="gallery-item">
+          <label for="gallery-item1" class="gallery-label">
+            <img src="/assets/img/KNY.1.jpg" class="gallery-preview"
+          /></label>
+          <input
+            type="radio"
+            name="gallery-list"
+            class="gallery-selector"
+            value="1.jpg"
+            id="gallery-item1"
+          />
+          <img src="/assets/img/KNY.1.jpg" class="gallery-fullsize" />
+          <img src="/assets/img/KNY.1.jpg" class="gallery-fullsize-default" />
+        </div>
 
-      <p>shingeki no kyojin</p>
-      <img
-        src="https://images8.alphacoders.com/108/thumb-1920-1081458.jpg"
-        alt=""
-        width="50%"
-      />
-      <p>death note</p>
-      <img
-        src="https://static.zerochan.net/DEATH.NOTE.full.1584565.jpg"
-        alt="dn"
-        width="50%"
-      />
+        <div class="gallery-item">
+          <label for="gallery-item2" class="gallery-label"
+            ><img src="/assets/img/KNY.2.jpg" class="gallery-preview"
+          /></label>
+          <input
+            type="radio"
+            name="gallery-list"
+            class="gallery-selector"
+            value="2.jpg"
+            id="gallery-item2"
+          />
+          <img src="/assets/img/KNY.2.jpg" class="gallery-fullsize" />
+        </div>
+        <!-- <div class="gallery-item">
+          <label for="gallery-item3" class="gallery-label"
+            ><img
+              src="/assets/img/Anime Boy Kimetsu No Yaiba Wallpaper - 1280x720.jpg"
+              class="gallery-preview"
+          /></label>
+          <input
+            type="radio"
+            name="gallery-list"
+            class="gallery-selector"
+            value="3.jpg"
+            id="gallery-item3"
+          />
+          <img
+            src="/assets/img/Anime Boy Kimetsu No Yaiba Wallpaper - 1280x720.jpg"
+            class="gallery-fullsize"
+          />
+        </div> -->
+      </div>
     </main>
   </body>
 </html>

@@ -41,3 +41,52 @@ body {
   color: red;
   padding: 4px;
 }
+/*------------*/
+
+#gallery-container {
+  position: relative;
+  width: 500px;
+  height: auto;
+  padding-top: 256px;
+  padding-bottom: 12px;
+  margin-top: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid red;
+  border-radius: 12px;
+}
+.gallery-item {
+  display: inline-flex;
+}
+.gallery-label {
+  display: flex;
+  cursor: pointer;
+  margin: 0px 12px 0 12px;
+}
+.gallery-preview {
+  width: 100px;
+  object-fit: contain;
+}
+.gallery-selector {
+  /* display: none; */
+}
+.gallery-selector:checked ~ .gallery-fullsize {
+  display: block;
+  /*Cuando el usuario presione el check la imagen full size aparecera*/
+}
+.gallery-fullsize {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  display: none;
+  width: 400px;
+  object-fit: contain;
+}
+.gallery-fullsize-default {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  width: 400px;
+  object-fit: contain;
+}
