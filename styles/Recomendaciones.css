@@ -39,6 +39,7 @@ body {
   border: 1px solid red;
   border-radius: 12px;
   color: red;
+  padding: 4px;
 }
 /*-----*/
 .form-container {
@@ -74,8 +75,9 @@ span {
   border: none;
   outline: none;
 }
-/* .input-anime-name:focus {
-  border: 1px solid red;
+
+/* .input:focus {
+  border: 1px solid black;
 } */
 
 .input-coment-area {
