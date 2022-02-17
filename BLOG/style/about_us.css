@@ -1,0 +1,29 @@
+@import url(index.css);
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid yellow;
+  background-color: azure;
+  border-radius: 6px;
+  width: 600px;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+
+.logo-container {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-container img {
+  width: 302px;
+  height: 483px;
+  object-fit: cover;
+}

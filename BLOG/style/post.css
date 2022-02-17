@@ -1,0 +1,56 @@
+@import url(index.css);
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+.review-container {
+  display: flex;
+  width: 900px;
+  height: auto;
+  background-color: aliceblue;
+  border: 1px solid yellow;
+  border-radius: 6px;
+  padding: 12px;
+  box-sizing: border-box;
+  margin: 95px auto 30px auto;
+}
+.review-portada-autor {
+  list-style: none;
+  padding: 0;
+  height: auto;
+}
+
+.review-container-portada {
+  width: 394px;
+  object-fit: contain;
+}
+.review-list {
+  width: 100%;
+  padding-left: 24px;
+  box-sizing: border-box;
+}
+.tittle-review {
+  font-size: 26px;
+  font-weight: bold;
+  list-style: none;
+  margin-bottom: 12px;
+}
+.review-content {
+  padding: 0;
+  list-style: none;
+}
+.review-content p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.sub-tittle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.insta-logo {
+  width: 22px;
+}
