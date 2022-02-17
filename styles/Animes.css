@@ -13,6 +13,9 @@ body {
   align-items: center;
   border-bottom: 1px solid red;
   box-shadow: 0px 0px 8px red;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(68, 209, 245);
 }
 .navbar div {
   display: flex;
@@ -45,6 +48,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  padding-top: 88px;
 }
 .review-container {
   display: flex;
@@ -53,7 +57,7 @@ main {
   border: 1px solid red;
   border-radius: 6px;
   padding: 12px 0 12px 12px;
-  margin: 30px auto 30px auto;
+  margin: auto auto 30px auto;
 }
 
 .review-container-portada {
@@ -84,4 +88,10 @@ ul {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 4px;
+}
+
+.btn-up {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
 }

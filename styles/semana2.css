@@ -13,6 +13,9 @@ body {
   align-items: center;
   border-bottom: 1px solid red;
   box-shadow: 0px 0px 8px red;
+  position: fixed;
+  background-color: rgb(68, 209, 245);
+  width: 100%;
 }
 .navbar div {
   display: flex;
@@ -41,3 +44,91 @@ body {
   color: red;
   padding: 4px;
 }
+/*-------------------------*/
+main {
+  padding-top: 100px;
+  display: flex;
+}
+.animes-on {
+  border: 1px solid red;
+  border-radius: 6px;
+  /* background-color: rgb(68, 209, 245); */
+  width: 300px;
+  height: 600px;
+  padding: 8px 0 8px 0;
+  /* margin-top: 100px; */
+  margin-left: 64px;
+  overflow: scroll;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.list-tittle {
+  border-bottom: 1px solid red;
+  padding: 8px;
+  font-weight: bold;
+  margin: 0;
+}
+.lista-animes li {
+  padding: 8px;
+  box-sizing: border-box;
+}
+/*-------------*/
+.post {
+  width: 70%;
+  height: 600px;
+  /* background-color: rgb(68, 209, 245); */
+  overflow: scroll;
+  margin: auto;
+  border: 1px solid red;
+  border-radius: 6px;
+  padding: 8px 0 8px 0;
+}
+/*
+One Piece
+Detective Conan
+Boruto: Naruto Next Generations
+Furusato Meguri Nippon no Mukashibanashi
+Dragon Ball Super Latino
+Pokemon (2019)
+Dragon Quest: Dai no Daibouken (2020)
+Shaman King (2021)
+Vanitas no Carte
+Genjitsu Shugi Yuusha no Oukoku Saikenki
+Hanyou no Yashahime: Sengoku Otogizoushi - Ni no Shou
+86 2nd Season
+Digimon Ghost Game
+Platinum End
+Ousama Ranking
+Lupin III: Part 6
+JoJo no Kimyou na Bouken Part 6: Stone OceanOVA
+Mahoutsukai no Yome: Nishi no Shounen to Seiran no KishiOVA
+Orient
+Leadale no Daichi nite
+Hakozume: Kouban Joshi no Gyakushuu
+Tokyo 24-ku
+Saiyuuki Reload: Zeroin
+Slow Loop
+Dolls' Frontline
+Shuumatsu no Harem
+Cue!
+Karakai Jouzu no Takagi-san 3
+Shikkakumon no Saikyou Kenja
+Sono Bisque Doll wa Koi wo Suru
+Akebi-chan no Sailor-fuku
+Kaijin Kaihatsu-bu no Kuroitsu-san
+Baraou no Souretsu
+Futsal Boys!!!!!
+Sabiiro no Armor: Reimei
+Sasaki to Miyano
+Shingeki no Kyojin: The Final Season Part 2
+Tribe Nine
+Sabikui Bisco
+Princess Connect! Re:Dive Season 2
+Gensou Sangokushi: Tengen Reishinki
+Fantasy Bishoujo Juniku Ojisan to
+Kenja no Deshi wo Nanoru Kenja
+Tensai Ouji no Akaji Kokka Saisei Jutsu
+Koroshi Ai
+*/
