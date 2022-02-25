@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expo espinosa</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: aqua;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px 10px;
+        padding: 15px;
+        height: 50vh;
+        width: 100vw;
+      }
+      .items {
+        background-color: red;
+        margin: 20px;
+        text-align: center;
+        font-size: 2rem;
+      }
+      .one {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+      }
+      .two {
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      .three {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+      }
+    </style>
+  </head>
+  <body>
+    <span>Los fr fraccionan </span>
+    <div class="container">
+      <div class="items one">1</div>
+      <div class="items two">2</div>
+      <div class="items three">3</div>
+      <div class="items four">4</div>
+      <div class="items five">5</div>
+      <div class="items six">6</div>
+    </div>
+    <!-- .>.*5  -->
+  </body>
+</html>
