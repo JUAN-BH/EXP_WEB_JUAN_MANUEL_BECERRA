@@ -68,26 +68,145 @@
         <p>Programación del evento- horario</p>
       </section>
       <section class="asides">
-        <aside class="spotify">
-          <!-- <iframe
-        style="border-radius: 12px"
-        src="https://open.spotify.com/embed/playlist/49HF37KywSsJczzA3lmYRl?utm_source=generator&theme=0"
-        width="100%"
-        height="380"
-        frameborder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      ></iframe> -->a
+        <aside class="spotify-container">
+          <iframe
+            class="spotify"
+            src="https://open.spotify.com/embed/playlist/49HF37KywSsJczzA3lmYRl?utm_source=generator&theme=0"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          ></iframe>
         </aside>
-        <aside class="img_animada">a</aside>
+        <aside class="img_animada">
+          <h1 class="albumes_tittle">Albumes de artistas invitados</h1>
+          <div class="albumes">
+            <ul>
+              <li>
+                <img
+                  src="https://www.latercera.com/resizer/13uNW9UgGFct62Sf77hcxlXqm1U=/420x0/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/WYOXAUZZ4VH7HPWW37KZ3JP3LE.jpg"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://m.media-amazon.com/images/I/81EYtj8oi3L._SL1500_.jpg"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://cdns-images.dzcdn.net/images/cover/eac9a4547aad301379b9267861e0da36/500x500.jpg"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b2731da4671c091ad760d960137f"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/e/e7/%22AM%22_%28Arctic_Monkeys%29.jpg"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://m.media-amazon.com/images/I/51x-aPEbhiL.jpg"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://m.media-amazon.com/images/I/71WRHYmYu5L._SL1425_.jpg"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273bd5535137387c1538753a546"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273305240b65c28020de3aac8eb"
+                />
+              </li>
+            </ul>
+          </div>
+        </aside>
       </section>
-
       <section class="pp_venta">Precios y puntos de venta</section>
-      <section class="form">Reserva de boletas</section>
-      <section class="sponsors">
-        Redes sociales Copyright Términos y condiciones Logo
+      <section class="form">
+        <form action="" method="post">
+          <h2 class="titlle-form">Reserva tus boletas</h2>
+          <label for="pname">
+            <span>Nombre completo</span> <br />
+            <input
+              class="input input-anime-name"
+              type="text"
+              id="pname"
+              placeholder="Nombre completo"
+              required
+            />
+          </label>
+
+          <label for="correo">
+            <span>Correo electronico</span> <br />
+            <input
+              class="input input-anime-name"
+              type="email"
+              id="correo"
+              placeholder="Correo electronico"
+              autocomplete="email"
+              required
+            />
+          </label>
+
+          <label for="phone">
+            <span>Telefono</span> <br />
+            <input
+              class="input input-anime-name"
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="123-45-678"
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              required
+            />
+          </label>
+
+          <label for="cantidad">
+            <span>Cuantas boletas deseas reservar:</span> <br />
+            <input
+              type="text"
+              list="cantidad"
+              placeholder="cantidad del anime"
+              class="input input-cantidad-list"
+            />
+            <datalist id="cantidad">
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="6"></option>
+            </datalist>
+          </label>
+
+          <input type="submit" value="Enviar" class="primary-button" />
+        </form>
       </section>
+      <section class="sponsors"></section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="tittle_logo2">
+        <h1 class="tittle2">LOUD</h1>
+        <img class="logo2" src="/PROYECTO_C1/assets/img/estereo.png" alt="" />
+        <h1 class="tittle2">RIOT</h1>
+      </div>
+      <div class="footer-content">
+        <h1 class="copyright">©LOUD RIOT 2022 | Politica de privacidad</h1>
+        <ul class="redes">
+          <li><img src="assets/img/instagram-brands.svg" alt="" /></li>
+          <li><img src="assets/img/facebook-brands.svg" alt="" /></li>
+          <li><img src="assets/img/twitter-brands.svg" alt="" /></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
