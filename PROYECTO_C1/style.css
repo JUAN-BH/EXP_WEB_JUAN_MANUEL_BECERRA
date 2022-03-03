@@ -1,0 +1,290 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(assets/fonts/LeagueGothic-Regular.woff);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: myFirstFont;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  background-color: #dcf4da;
+  /* #a0c181
+  #dcf4da */
+}
+/*----------------------------------------*/
+header {
+  /* background-image: url(https://www.wootmag.com/wp-content/uploads/2021/07/10-confirmed-el-dorado-min.png); */
+  /* background-image: url(https://media.resources.festicket.com/www/photos/2466-artwork.jpg); */
+  /* background-image: url(https://static.wixstatic.com/media/0d0c80_561184b7e5314c69a778c18284fb7ab2~mv2.png/v1/fit/w_2500,h_1330,al_c/0d0c80_561184b7e5314c69a778c18284fb7ab2~mv2.png); */
+  background-image: url(https://static.wixstatic.com/media/0d0c80_8c0ebeaa1da24b28b1b72d687133f77a~mv2.png/v1/fill/w_1899,h_990,al_c,q_90,usm_0.66_1.00_0.01/0d0c80_8c0ebeaa1da24b28b1b72d687133f77a~mv2.webp);
+  /* background-image: url(https://edm.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTgwOTI3NzQ3MzcwMDAxNDk2/firefly_option_1.jpg); */
+  background-size: cover;
+  background-position: 0 374px;
+  position: relative;
+  background-color: aqua;
+  overflow: hidden;
+  width: 100%;
+  height: 226px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  background-attachment: fixed;
+}
+.tittle_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffd9;
+  border-radius: 50%;
+  /* position: absolute;
+  right: 0;
+  left: 0;
+  top: -36px;
+  margin-left: auto;
+  margin-right: auto; */
+  width: 205px;
+  height: 195px;
+  z-index: 1;
+}
+.tittle {
+  font-size: 3.5rem;
+  margin: 2px;
+}
+.logo {
+  width: 5rem;
+  height: 5rem;
+}
+/*-*/
+.pulse {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 35rem;
+}
+circle {
+  fill: #6de1d5;
+  transform: scale(0);
+  opacity: 0;
+  transform-origin: 50% 50%;
+  animation: pulse 2s cubic-bezier(0.5, 0.5, 0, 1);
+  animation-iteration-count: infinite;
+  width: 270px;
+  border: 2px solid black;
+}
+circle:nth-child(2) {
+  fill: #7fc6a4;
+  animation: pulse 2s 0.75s cubic-bezier(0.5, 0.5, 0, 1);
+  animation-iteration-count: infinite;
+}
+circle:nth-child(3) {
+  fill: #e5f77d;
+  animation: pulse 2s 1.5s cubic-bezier(0.5, 0.5, 0, 1);
+  animation-iteration-count: infinite;
+}
+@keyframes pulse {
+  25% {
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+/*-*/
+.menu-content {
+  background-color: greenyellow;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 38px;
+  /* position: sticky;
+  top: 0;
+  z-index: 100; */
+}
+.menu-content-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 38px;
+  background-color: #c4151c;
+  list-style: none;
+  /* position: sticky;
+  top: 0;
+  z-index: 100; */
+}
+.items {
+  display: inline-block;
+  /* margin: 0 52px; */
+}
+.items a {
+  font-size: 2.3rem;
+  text-decoration: none;
+  color: black;
+}
+.i1 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbf500;
+  height: 73px;
+  padding: 0 24px;
+  width: 150px;
+  cursor: pointer;
+}
+.i1 a:hover {
+  opacity: 1;
+  background-color: yellow;
+  text-decoration: underline;
+}
+.i2 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d8260c;
+  height: 48px;
+  padding: 0 24px;
+  width: 150px;
+  cursor: pointer;
+}
+.i2 a:hover {
+  opacity: 1;
+  background-color: red;
+  text-decoration: underline;
+}
+.i3 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00acf0;
+  height: 65px;
+  padding: 0 24px;
+  width: 210px;
+  cursor: pointer;
+}
+.i3 a:hover {
+  opacity: 1;
+  background-color: #1bbeff;
+  text-decoration: underline;
+}
+.i4 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 198, 204);
+  height: 54px;
+  padding: 0 24px;
+  width: 190px;
+  cursor: pointer;
+}
+.i4 a:hover {
+  opacity: 1;
+  background-color: rgb(255, 214, 221);
+  text-decoration: underline;
+}
+.i5 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #02a444;
+  height: 43px;
+  padding: 0 24px;
+  width: 150px;
+  cursor: pointer;
+}
+.i5 a:hover {
+  opacity: 1;
+  background-color: #05df5c;
+  text-decoration: underline;
+}
+.i6 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbf500;
+  height: 64px;
+  padding: 0 24px;
+  width: 150px;
+  cursor: pointer;
+}
+.i6 a:hover {
+  opacity: 1;
+  background-color: yellow;
+  text-decoration: underline;
+}
+/*---------------------------------*/
+main {
+  height: 100%;
+}
+.hero_content-container {
+  width: 80%;
+  height: 700px;
+  margin: auto;
+  background-color: #00acf0;
+}
+.evento {
+  width: 80%;
+  height: 700px;
+  margin: 8px auto;
+  background-color: #00acf0;
+}
+.programacion {
+  width: 80%;
+  height: 700px;
+  margin: 8px auto;
+  background-color: #00acf0;
+}
+
+.asides {
+  width: 80%;
+  height: 700px;
+  margin: 8px auto;
+  background-color: #05df5c;
+  display: flex;
+}
+.spotify,
+.img_animada {
+  width: 50%;
+  height: 700px;
+  margin: auto;
+  background-color: #00acf0;
+}
+.spotify {
+  margin-right: 8px;
+}
+.img_animada {
+  margin-left: 8px;
+}
+.pp_venta {
+  width: 80%;
+  height: 700px;
+  margin: 8px auto;
+  background-color: #00acf0;
+}
+.form {
+  width: 80%;
+  height: 700px;
+  margin: 8px auto;
+  background-color: #00acf0;
+}
+.sponsors {
+  width: 80%;
+  height: 300px;
+  margin: 8px auto;
+  background-color: #00acf0;
+}
+/*------------------*/
+footer {
+  width: 100%;
+  height: 226px;
+  background-color: #c4151c;
+}
