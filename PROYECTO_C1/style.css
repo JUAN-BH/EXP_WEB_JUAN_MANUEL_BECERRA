@@ -240,7 +240,7 @@ main {
   width: 80%;
   height: 700px;
   margin: 8px auto;
-  background-color: #00acf0;
+  /* background-color: #00acf0; */
   display: flex;
 }
 .event-info,
@@ -250,7 +250,7 @@ main {
   height: 100%;
 }
 .event-info {
-  background-color: #c4151c;
+  /* background-color: #c4151c; */
   display: flex;
   flex-direction: column;
   padding: 52px;
@@ -281,7 +281,6 @@ main {
   height: 300px;
   width: 500px;
 }
-
 .artist {
   display: flex;
   flex-direction: column;
@@ -302,13 +301,68 @@ main {
 .artist-content ul:first-child {
   margin-right: 44px;
 }
-
 /*-*/
 .programacion {
   width: 80%;
-  height: 700px;
+  height: 574px;
   margin: 8px auto;
   background-color: #00acf0;
+  border: 8px solid rgb(158, 235, 75);
+  text-align: center;
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+}
+.day1,
+.day2 {
+  padding: 47px 20px;
+}
+.day1-tittle {
+  font-size: 8rem;
+  letter-spacing: 0.6rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 8px 8px #ff1f8f, 20px 20px #000000;
+}
+.artist-main {
+  font-size: 5rem;
+  margin: 34px auto 6px auto;
+}
+.day1 ul,
+.day2 ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-size: 4rem;
+  margin: auto;
+}
+.ar2 li:first-child {
+  margin-right: 24px;
+}
+.ar3 li,
+.ar4 li {
+  font-size: 3.8rem;
+  margin: 12px 24px;
+}
+.ar5 li {
+  font-size: 3rem;
+  margin: 12px 12px;
+}
+.icon {
+  justify-self: center;
+  align-self: center;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  opacity: 0.7;
+}
+.day2-tittle {
+  font-size: 8rem;
+  letter-spacing: 0.6rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 8px 8px #ff1f8f, 20px 20px #000000;
 }
 /*-*/
 .asides {
@@ -397,7 +451,7 @@ main {
   width: 80%;
   height: 700px;
   margin: 8px auto;
-  background-color: #00acf0;
+  background-color: rgb(240, 198, 204);
 }
 /*-*/
 .form {
@@ -405,7 +459,7 @@ main {
   height: 613px;
   margin: 8px auto;
   /* border: 3px solid #00acf0; */
-  background-color: #02a444;
+  /* background-color: #02a444; */
   display: flex;
   justify-content: center;
 }
