@@ -6,13 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="assets/img/estereo.png" type="image/x-icon" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap"
-      rel="stylesheet"
-    /> -->
-    <script
+    <!-- <script
       type="text/javascript"
       src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
     ></script>
@@ -24,7 +18,7 @@
       $(window).ready(function () {
         $("#sticker").sticky({ topSpacing: 0 });
       });
-    </script>
+    </script> -->
     <title>LOUD RIOT</title>
   </head>
   <body>
@@ -49,25 +43,99 @@
     <main>
       <nav class="menu-content" id="sticker">
         <ul class="menu-content-list">
-          <li class="items i1"><a href="">Descripcion</a></li>
+          <li class="items i1"><a href="#descripcion">Descripcion</a></li>
           <li class="items i2"><a href=""> Programacion</a></li>
-          <li class="items i3"><a href=""> Canciones de los artistas</a></li>
+          <li class="items i3">
+            <a href="#canciones"> Canciones de los artistas</a>
+          </li>
           <li class="items i4"><a href="">Informacion boletas</a></li>
-          <li class="items i5"><a href="">Reservas</a></li>
-          <li class="items i6"><a href="">Patrocinadores</a></li>
+          <li class="items i5"><a href="#reservas">Reservas</a></li>
+          <li class="items i6"><a href="#patrocinadores">Patrocinadores</a></li>
         </ul>
       </nav>
       <section class="hero_content-container">
-        <p>video</p>
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/CdDcQ79qNFI?start=810&amp;end=836"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </section>
-      <section class="evento">
-        ¿De qué trata el evento? ¿Quiénes participarán? Fecha Lugar ¿Cómo
-        llegar?
+      <section class="evento" id="descripcion">
+        <!-- <h1 class="evento-tittle">
+          ¿De qué trata el evento? ¿Quiénes participarán? Fecha Lugar ¿Cómo
+          llegar?
+        </h1> -->
+        <aside class="event-info">
+          <ul class="event-info-content">
+            <li class="event-info-tittle">Loud Riot</li>
+            <li>
+              Es un evento caracterizado por traer artistas <br />
+              que te haran vibrar y agitar el corazon para que saques esa
+              version de ti que no conocias...
+            </li>
+            <li class="event-info-tittle">Fecha y lugar</li>
+            <li>Marzo 3 del 2022</li>
+          </ul>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                width="500"
+                height="300"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Recreativo%20Comfandi%20Pance,%20Kr%20168%20Centro,%20Cali,%20Valle%20del%20Cauca&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe>
+              <a href="https://putlocker-is.org"></a><br />
+            </div>
+          </div>
+        </aside>
+        <aside class="artist">
+          <h1 class="artist-tittle">Artistas invitados</h1>
+          <div class="artist-content">
+            <ul>
+              <li>Wos</li>
+              <li>Akapellah</li>
+              <li>Alcolirykoz</li>
+              <li>Tame Imapala</li>
+              <li>Kodak Black</li>
+              <li>Wiz Khalifa</li>
+              <li>Duki</li>
+              <li>Kid Cudi</li>
+              <li>Kidd Keo</li>
+              <li>50 Cent</li>
+              <li>Los Rivera Destino</li>
+              <li>Kase.O</li>
+              <li>Manu Chao</li>
+            </ul>
+            <ul>
+              <li>Phill Collins</li>
+              <li>Kendrick Lamar</li>
+              <li>Eladio Carrion</li>
+              <li>Cuco</li>
+              <li>Louta</li>
+              <li>Kota The Friend</li>
+              <li>Dillom</li>
+              <li>Nicki Nicole</li>
+              <li>Charles Ans</li>
+              <li>Artic Monkeys</li>
+              <li>Oliver tree</li>
+              <li>C.Tangana</li>
+              <li>Calle 13</li>
+            </ul>
+          </div>
+        </aside>
       </section>
+
       <section class="programacion">
         <p>Programación del evento- horario</p>
       </section>
-      <section class="asides">
+      <section class="asides" id="canciones">
         <aside class="spotify-container">
           <iframe
             class="spotify"
@@ -108,7 +176,7 @@
               </li>
               <li>
                 <img
-                  src="https://m.media-amazon.com/images/I/51x-aPEbhiL.jpg"
+                  src="https://i0.wp.com/prensaescenario.com/wp-content/uploads/2022/02/image003-17.jpg?ssl=1"
                 />
               </li>
               <li>
@@ -131,7 +199,7 @@
         </aside>
       </section>
       <section class="pp_venta">Precios y puntos de venta</section>
-      <section class="form">
+      <section class="form" id="reservas">
         <form action="" method="post">
           <h2 class="titlle-form">Reserva tus boletas</h2>
           <label for="pname">
@@ -175,7 +243,7 @@
             <input
               type="text"
               list="cantidad"
-              placeholder="cantidad del anime"
+              placeholder="Cantidad de boletas"
               class="input input-cantidad-list"
             />
             <datalist id="cantidad">
@@ -191,7 +259,71 @@
           <input type="submit" value="Enviar" class="primary-button" />
         </form>
       </section>
-      <section class="sponsors"></section>
+      <section class="sponsors" id="patrocinadores">
+        <h1 class="sponsors-tittle">Apoyan</h1>
+        <ul class="sponsors-list">
+          <li>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/39/39134.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://assets.website-files.com/60d34f3ebd0d5bd63628de45/60d4f94029800e79f576991f_Rappi_logo.svg.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/5969/5969002.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/731/731962.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/154/154874.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://icons-for-free.com/iconfiles/png/512/platzi-1324440213777394405.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://cdn.freebiesupply.com/logos/large/2x/dominos-pizza-1-logo-svg-vector.svg"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://www.pngplay.com/wp-content/uploads/13/BMW-Logo-PNG-HD-Quality.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://cdn.freebiesupply.com/logos/large/2x/heineken-5-logo-png-transparent.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://www.pngarts.com/files/3/Mcdonalds-Logo-PNG-Transparent-Image.png"
+              alt=""
+            />
+          </li>
+        </ul>
+      </section>
     </main>
     <footer>
       <div class="tittle_logo2">
