@@ -1,0 +1,46 @@
+@import url(style.css);
+/*---------------------------------*/
+/* main {
+  height: 100vh;
+} */
+body {
+  background-image: url(https://static.wixstatic.com/media/0d0c80_8c0ebeaa1da24b28b1b72d687133f77a~mv2.png/v1/fill/w_1899,h_990,al_c,q_90,usm_0.66_1.00_0.01/0d0c80_8c0ebeaa1da24b28b1b72d687133f77a~mv2.webp);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.exito {
+  margin: 24px auto;
+  width: 80%;
+  height: 550px;
+  background-color: #00acf0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 24px solid #ffffd9;
+  opacity: 0.8;
+  position: relative;
+  overflow: hidden;
+}
+.exito:hover {
+  opacity: 1;
+  transition-delay: 0.1s;
+  transition: all 0.5s;
+}
+.exito-tittle {
+  font-size: 8rem;
+  color: red;
+}
+.exito p {
+  font-size: 6rem;
+  color: red;
+}
+.primary-button a {
+  text-decoration: none;
+  color: black;
+}
+footer {
+  height: 156px;
+}
+/*------------------*/

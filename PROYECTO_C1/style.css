@@ -314,7 +314,7 @@ main {
 }
 .day1,
 .day2 {
-  padding: 47px 20px;
+  padding: 47px 18px;
 }
 .day1-tittle {
   font-size: 8rem;
@@ -322,7 +322,7 @@ main {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: white;
-  text-shadow: 8px 8px rgb(255, 214, 221), 20px 20px #000000;
+  text-shadow: 8px 8px #ff1f8f, 20px 20px #000000;
 }
 .artist-main {
   font-size: 5rem;
@@ -561,6 +561,7 @@ span {
   opacity: 1;
   background-color: red;
   text-decoration: underline;
+  transition: all 0.2s;
 }
 /*-*/
 .sponsors {
