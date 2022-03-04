@@ -75,19 +75,19 @@ circle {
   transform: scale(0);
   opacity: 0;
   transform-origin: 50% 50%;
-  animation: pulse 2s cubic-bezier(0.5, 0.5, 0, 1);
+  animation: pulse 2.5s cubic-bezier(0.5, 0.5, 0, 1);
   animation-iteration-count: infinite;
   width: 270px;
   border: 2px solid black;
 }
 circle:nth-child(2) {
   fill: #7fc6a4;
-  animation: pulse 2s 0.75s cubic-bezier(0.5, 0.5, 0, 1);
+  animation: pulse 2.5s 0.75s cubic-bezier(0.5, 0.5, 0, 1);
   animation-iteration-count: infinite;
 }
 circle:nth-child(3) {
   fill: #e5f77d;
-  animation: pulse 2s 1.5s cubic-bezier(0.5, 0.5, 0, 1);
+  animation: pulse 2.5s 1.5s cubic-bezier(0.5, 0.5, 0, 1);
   animation-iteration-count: infinite;
 }
 @keyframes pulse {
@@ -140,11 +140,13 @@ circle:nth-child(3) {
   padding: 0 24px;
   width: 150px;
   cursor: pointer;
+  transition: all 0.2s;
 }
 .i1 a:hover {
   opacity: 1;
   background-color: yellow;
   text-decoration: underline;
+  transition: all 0.2s;
 }
 .i2 a {
   display: flex;
@@ -155,11 +157,13 @@ circle:nth-child(3) {
   padding: 0 24px;
   width: 150px;
   cursor: pointer;
+  transition: all 0.2s;
 }
 .i2 a:hover {
   opacity: 1;
   background-color: red;
   text-decoration: underline;
+  transition: all 0.2s;
 }
 .i3 a {
   display: flex;
@@ -170,11 +174,13 @@ circle:nth-child(3) {
   padding: 0 24px;
   width: 210px;
   cursor: pointer;
+  transition: all 0.2s;
 }
 .i3 a:hover {
   opacity: 1;
   background-color: #1bbeff;
   text-decoration: underline;
+  transition: all 0.2s;
 }
 .i4 a {
   display: flex;
@@ -185,11 +191,13 @@ circle:nth-child(3) {
   padding: 0 24px;
   width: 190px;
   cursor: pointer;
+  transition: all 0.2s;
 }
 .i4 a:hover {
   opacity: 1;
   background-color: rgb(255, 214, 221);
   text-decoration: underline;
+  transition: all 0.2s;
 }
 .i5 a {
   display: flex;
@@ -200,11 +208,13 @@ circle:nth-child(3) {
   padding: 0 24px;
   width: 150px;
   cursor: pointer;
+  transition: all 0.2s;
 }
 .i5 a:hover {
   opacity: 1;
   background-color: #05df5c;
   text-decoration: underline;
+  transition: all 0.2s;
 }
 .i6 a {
   display: flex;
@@ -215,11 +225,13 @@ circle:nth-child(3) {
   padding: 0 24px;
   width: 150px;
   cursor: pointer;
+  transition: all 0.2s;
 }
 .i6 a:hover {
   opacity: 1;
   background-color: yellow;
   text-decoration: underline;
+  transition: all 0.2s;
 }
 /*---------------------------------*/
 main {
@@ -310,7 +322,7 @@ main {
   border: 12px solid rgb(158, 235, 75);
   text-align: center;
   display: grid;
-  grid-template-columns: 45% 10% 45%;
+  grid-template-columns: 50% 50%;
 }
 .day1,
 .day2 {
@@ -399,10 +411,12 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s;
 }
 .albumes ul {
   list-style-type: none;
   width: 424px;
+  transition: all 0.2s;
 }
 /* animation */
 .albumes ul li,
@@ -437,6 +451,7 @@ main {
   width: 130px;
   height: 130px;
   background: white;
+  transition: all 0.2s;
 }
 .albumes ul li img:hover {
   width: 200px;
@@ -445,6 +460,7 @@ main {
   margin-left: -130px;
   top: 65%;
   left: 65%;
+  transition: all 0.2s;
 }
 /*-*/
 .pp_venta {
@@ -475,12 +491,14 @@ main {
   width: 362px;
   height: 216px;
   object-fit: contain;
+  transition: all 0.2s;
 }
 .E12 img:hover {
   width: 382px;
   height: 236px;
   object-fit: contain;
   cursor: pointer;
+  transition: all 0.2s;
 }
 .promE {
   display: flex;
@@ -492,14 +510,14 @@ main {
   width: 483px;
   height: 284px;
   object-fit: contain;
+  transition: all 0.2s;
 }
 .promE img:hover {
-  position: relative;
-  top: -20px;
   width: 500px;
   height: 306px;
   object-fit: contain;
   cursor: pointer;
+  transition: all 0.2s;
 }
 
 /*-*/
@@ -554,6 +572,7 @@ span {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: all 0.2s;
 }
 
 .primary-button:hover {
