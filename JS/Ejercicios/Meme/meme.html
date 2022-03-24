@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="meme.css" />
+    <title>Meme Generator</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Meme Generator</h1>
+      <img
+        src="https://cdn-icons.flaticon.com/png/512/3475/premium/3475926.png?token=exp=1648156594~hmac=316dc0fe427952ea551a6f082f8df1bf"
+        alt="logomeme"
+        class="logo"
+      />
+    </header>
+    <main>
+      <div class="meme-generator">
+        <section class="input-meme">
+          <label class="input-meme--label">
+            <span>Escoge la imagen</span> <br />
+            <input type="file" id="imgInput" />
+          </label>
+
+          <label class="input-meme--label2">
+            <span>Introduce el texto de arriba</span> <br />
+            <input type="text" id="topTxtInput" />
+          </label>
+
+          <label class="input-meme--label2">
+            <span>Introduce el texto de abajo</span> <br />
+            <input type="text" id="bottomTxtInput" />
+          </label>
+
+          <button type="button" id="generator" class="primary-button">
+            Generar meme
+          </button>
+        </section>
+
+        <section class="output-meme">
+          <canvas id="meme"></canvas>
+          <label for="codInput">
+            <p id="codOutput"></p>
+            <input type="number" name="" id="codInput" />
+          </label>
+          <button id="btnVerificador">Ingresar codigo</button>
+          <button id="btnDownload">Descarga el meme creado</button>
+          <button id="btnNewMeme">Generar otro meme</button>
+        </section>
+        <script src="meme.js"></script>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,5 +1,3 @@
-const section = document.getElementsByClassName("item");
-const colorName = document.getElementsByClassName("NameColor");
 const boton = document.getElementsByClassName("boton");
 var rgb = [];
 
