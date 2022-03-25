@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="meme.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Raleway:ital,wght@0,100;0,200;1,100&family=Roboto:ital,wght@0,300;1,300&family=Shizuru&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Meme Generator</title>
   </head>
   <body>
@@ -26,12 +32,12 @@
 
           <label class="input-meme--label2">
             <span>Introduce el texto de arriba</span> <br />
-            <input type="text" id="topTxtInput" />
+            <input type="text" id="topTxtInput" class="txtInput" />
           </label>
 
           <label class="input-meme--label2">
             <span>Introduce el texto de abajo</span> <br />
-            <input type="text" id="bottomTxtInput" />
+            <input type="text" id="bottomTxtInput" class="txtInput" />
           </label>
 
           <button type="button" id="generator" class="primary-button">
@@ -41,16 +47,30 @@
 
         <section class="output-meme">
           <canvas id="meme"></canvas>
-          <label for="codInput">
-            <p id="codOutput"></p>
-            <input type="number" name="" id="codInput" />
+          <label for="codInput" id="labelOutput" hidden class="cod-activo">
+            <p id="codOutput" class="cod-activo-tittle"></p>
+            <input
+              type="number"
+              name=""
+              id="codInput"
+              class="cod-activo-input"
+            />
           </label>
-          <button id="btnVerificador">Ingresar codigo</button>
-          <button id="btnDownload">Descarga el meme creado</button>
-          <button id="btnNewMeme">Generar otro meme</button>
+          <button id="btnVerificador" hidden class="cod-activo-btn">
+            Ingresar codigo
+          </button>
+          <section class="btn-outputs">
+            <button id="btnDownload" class="secondary-button">Descargar</button>
+            <button id="btnNewMeme" class="secondary-button">
+              Generar otro meme
+            </button>
+          </section>
         </section>
         <script src="meme.js"></script>
       </div>
     </main>
+    <footer>
+      <p>Created by Juan Manuel Becerra</p>
+    </footer>
   </body>
 </html>

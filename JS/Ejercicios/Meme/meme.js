@@ -8,8 +8,12 @@ const codigoU = document.getElementById("codInput");
 const btnVerificador = document.getElementById("btnVerificador");
 const btnNewMeme = document.getElementById("btnNewMeme");
 const btnDownload = document.getElementById("btnDownload");
+const labelOutput = document.getElementById("labelOutput");
 let image;
 var cod;
+
+// labelOutput.style.display = "none";
+// btnVerificador.style.display = "none";
 
 btnGenerator.addEventListener("click", () => {
   const imageDataUrl = URL.createObjectURL(imgInput.files[0]);
@@ -29,9 +33,19 @@ btnGenerator.addEventListener("click", () => {
     updateMemeCanvas(canvas, image, topTxtInput.value, bottomTxtInput.value);
   });
 
+  canvas.style.backgroundImage = "none";
+
   topTxtInput.disabled = true;
   bottomTxtInput.disabled = true;
   imgInput.disabled = true;
+
+  labelOutput.hidden = false;
+  btnVerificador.hidden = false;
+
+  // labelOutput.classList.toggle("cod-activo");
+  // codGen.classList.toggle("cod-activo-tittle");
+  // codigoU.classList.toggle("cod-activo-input");
+  // btnVerificador.classList.toggle("cod-activo-btn");
   cod = Math.floor(100000 + Math.random() * 900000);
   codGen.innerHTML = `Ingresa el siguente codigo si deseas editar el meme que acabas de
   crear: ${cod}`;
